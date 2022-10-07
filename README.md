@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# git 명령어
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href='https://hackmd.io/@oW_dDxdsRoSpl0M64Tfg2g/ByfwpNJ-K'>깃허브 명령어 참고</a>
 
-## Available Scripts
 
-In the project directory, you can run:
+* 터미널을 따로 열지 않아도 vs-code나 파이참 개발환경에서 터미널을 열어서 수행하면 됨
+* 명령어를 사용하지 않을 경우 소스트리나 깃허브데스크탑 이용
 
-### `npm start`
+1. 깃허브 레파지토리 생성(New Organization을 이용해 조 이름으로된 저장소 생성
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. 레파지토리 생성 후 맴버를 collaborator로 추가한다.(관리자로 추가 : pull과 push 권한 부여)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. 환경설정한 최초 프로젝트 파일을 깃허브 레파지토리에 올린다.
 
-### `npm test`
+4. 깃허브 레파지토리에 최초 파일 올리는 방법
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br/>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  ## git init (깃허브 초기설정)
+    # git status (파일의 상태확인)
+    # git add . (전체 파일 업로드) ------> 하나의 파일을 올리고 싶은 경우 # git add 파일명
+    # git status (파일의 상태확인)
+    # git commit -m "프로젝트 시작(커밋 메세지 입력)"
+    # git remote add origin 깃헙주소
+    # git push -u origin main(or master) : 지금은 깃허브에서 자동으로 생성하는게 main, 예전에는 현재의 main이 master였음
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    # git push -u origin +master (강제 푸시)
 
-### `npm run eject`
+  ### <a href="https://www.youtube.com/watch?v=lelVripbt2M&t=597s"><참고영상></a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. 환경설정된 프로젝트 파일을 clone한다
+    
+    # git clone 깃헙주소
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+6. clone된 파일을 수정함
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+7. 수정 후 다시 파일 push
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    # git add . (전체 파일 업로드)
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    # git commit -m "프로젝트 시작(커밋 메세지 입력-jieun first commit 등)"
+    # git pull origin master : 최신상태를 유지하기 위해 pull 땡겨오기
+    # git checkout -b 브랜치 이름 (새로운 브랜치 생성)
+    # git push origin 브랜치 이름

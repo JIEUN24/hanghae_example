@@ -17,29 +17,26 @@
 <br/>
 
 
-  ## git init (깃허브 초기설정)
+  ## git init (깃허브 초기설정) --> 한명이 대표로 셋팅
     # git status (파일의 상태확인)
     # git add . (전체 파일 업로드) ------> 하나의 파일을 올리고 싶은 경우 # git add 파일명
     # git status (파일의 상태확인)
     # git commit -m "프로젝트 시작(커밋 메세지 입력)"
     # git remote add origin 깃헙주소
     # git push -u origin main(or master) : 지금은 깃허브에서 자동으로 생성하는게 main, 예전에는 현재의 main이 master였음
-
-
-    # git push -u origin +master (강제 푸시)
+ 
 
   ### <a href="https://www.youtube.com/watch?v=lelVripbt2M&t=597s"><참고영상></a>
 
-5. 환경설정된 프로젝트 파일을 clone한다
-    
+<br/>
+
+  ##  깃에 올라가 있는 파일을 받을 때 --> 셋팅한 것을 팀원들이 받을 때
     # git clone 깃헙주소
+    # git pull origin 브랜치 이름 ----> 어떤 브랜치의 파일을 받아올 것인지
 
-6. clone된 파일을 수정함
 
-7. 수정 후 다시 파일 push
-
+  ## 수정 후 다시 파일 PUSH 할 때
     # git add . (전체 파일 업로드)
-
     # git commit -m "프로젝트 시작(커밋 메세지 입력-jieun first commit 등)"
     # git pull origin master : 최신상태를 유지하기 위해 pull 땡겨오기
     # git checkout -b 브랜치 이름 (새로운 브랜치 생성)

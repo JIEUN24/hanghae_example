@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import { deleteTodo } from "../../../redux/modules/todos";
-import { updateTodo } from "../../../redux/modules/todos";
+import { deleteTodo, updateTodo } from '../../../redux/modules/todos';
 import { useDispatch } from "react-redux";
 import { useNavigate } from 'react-router-dom';
 
